@@ -1,10 +1,11 @@
 window.env = {
   "ALLUSERSPROFILE": "C:\\ProgramData",
+  "API": "http://localhost:5000/api",
   "APPDATA": "C:\\Users\\gouri\\AppData\\Roaming",
   "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
   "ChocolateyLastPathUpdate": "133188767879960495",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_6056_RSWHUOKRCRKCZJJQ",
-  "clientID": "572287581802-rkk7rqd544t79v5gklr745v5pp82u4gk.apps.googleusercontent.com",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_5332_JVMZMPFZVCAADHYN",
+  "CLIENTID": "572287581802-rkk7rqd544t79v5gklr745v5pp82u4gk.apps.googleusercontent.com",
   "COLOR": "1",
   "COLORTERM": "truecolor",
   "CommonProgramFiles": "C:\\Program Files\\Common Files",
@@ -64,7 +65,6 @@ window.env = {
   "PROMPT": "$P$G",
   "PSModulePath": "C:\\Users\\gouri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
   "PUBLIC": "C:\\Users\\Public",
-  "REACT_APP_API_URL": "http://localhost:5000/api",
   "SESSIONNAME": "Console",
   "SystemDrive": "C:",
   "SystemRoot": "C:\\WINDOWS",
@@ -85,6 +85,6 @@ window.env = {
   "windir": "C:\\WINDOWS",
   "WSLENV": "WT_SESSION:WT_PROFILE_ID:",
   "WT_PROFILE_ID": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-  "WT_SESSION": "9da1ec65-7e03-447b-b18d-40a6f5443bc7",
+  "WT_SESSION": "d4ddd694-687a-42a0-b3c7-b2dbec6ef6a1",
   "ZES_ENABLE_SYSMAN": "1"
 };
