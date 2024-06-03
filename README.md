@@ -1,4 +1,6 @@
-﻿A form allow users to create new tasks. Tasks have a
+#Task Manager
+
+A form allow users to create new tasks. Tasks have a
 title, description, and due date also add tasks to the respective priority lists.
 A list of all tasks showing the title, due date, and status (e.g., "pending," "completed").
 A page to view the details of a specific task, including its
