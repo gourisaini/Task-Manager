@@ -1,12 +1,13 @@
 // LoginComponent.js
-
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 import { TaskContext } from '../context/TaskProvider';
 
 const LoginComponent = () => {
+
     const { setUser } = useContext(TaskContext)
+
     const onLoginSuccess = (res) => {
         const decoded = jwtDecode(res.credential);
         localStorage.setItem('user', JSON.stringify(decoded));

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-
 const url = process.env.API
+
 export const addTask = async (data) => {
     try {
         await axios.post(`${url}/createTask/`, data);

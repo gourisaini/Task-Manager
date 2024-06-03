@@ -9,18 +9,22 @@ const TaskComponent = ({ id }) => {
 
   const { title, setTitle, description, setDescription, dueDate, setDueDate, status, setOpen, user, priority } = useContext(TaskContext)
   const [edit, setEdit] = useState(true)
+  
   const getTasks = async () => {
     const tasks = await getTask(id);
     setTitle(tasks.data.title)
     setDescription(tasks.data.description)
     setDueDate(tasks.data.dueDate)
   }
+
   useEffect(() => {
     if (id) {
       getTasks()
     }
   }, [id])
+
   const items = JSON.parse(localStorage.getItem('user'));
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
@@ -29,8 +33,12 @@ const TaskComponent = ({ id }) => {
       dueDate: dueDate,
       status: status,
       userID: user,
+      priority: priority
     }
     const result = await addTask(data)
+    setTitle("")
+    setDescription("")
+    setDueDate("")
     setOpen(null)
   };
 
@@ -48,10 +56,11 @@ const TaskComponent = ({ id }) => {
       priority: priority
     }
     const result = await updateTask(id, data);
-    console.log(result);
+    setTitle("")
+    setDescription("")
+    setDueDate("")
     setOpen(null);
   }
-
 
   const handleDelete = async (e) => {
     e.preventDefault();
@@ -79,7 +88,7 @@ const TaskComponent = ({ id }) => {
                       value={title}
                       onChange={(e) => setTitle(e.target.value)}
                       disabled={id ? edit : false}
-                      className="mx-2 block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                      className="pl-3 block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -96,7 +105,7 @@ const TaskComponent = ({ id }) => {
                     rows={3}
                     disabled={id ? edit : false}
                     defaultValue={''}
-                    className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
                 <p className="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about your Task.</p>
@@ -113,7 +122,7 @@ const TaskComponent = ({ id }) => {
                       value={dueDate}
                       disabled={id ? edit : false}
                       onChange={(e) => setDueDate(e.target.value)}
-                      className="mx-2 block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                      className="pl-3 pr-3 block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>

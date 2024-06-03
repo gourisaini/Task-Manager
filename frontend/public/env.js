@@ -3,7 +3,7 @@ window.env = {
   "APPDATA": "C:\\Users\\gouri\\AppData\\Roaming",
   "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
   "ChocolateyLastPathUpdate": "133188767879960495",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_9916_CZROPMPRXJUCIUBV",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_6056_RSWHUOKRCRKCZJJQ",
   "clientID": "572287581802-rkk7rqd544t79v5gklr745v5pp82u4gk.apps.googleusercontent.com",
   "COLOR": "1",
   "COLORTERM": "truecolor",
@@ -14,7 +14,6 @@ window.env = {
   "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
   "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
   "EDITOR": "C:\\WINDOWS\\notepad.exe",
-  "EFC_7784": "1",
   "GIT_ASKPASS": "c:\\Users\\gouri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
   "HOME": "C:\\Users\\gouri",
   "HOMEDRIVE": "C:",
@@ -82,7 +81,10 @@ window.env = {
   "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\gouri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
   "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-45e27a8f62-sock",
   "VSCODE_INJECTION": "1",
-  "VSCODE_NONCE": "d086b2af-f1f0-413b-8806-b080033ac66b",
+  "VSCODE_NONCE": "429c0f7d-242f-44cb-881d-39966317561d",
   "windir": "C:\\WINDOWS",
+  "WSLENV": "WT_SESSION:WT_PROFILE_ID:",
+  "WT_PROFILE_ID": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "WT_SESSION": "9da1ec65-7e03-447b-b18d-40a6f5443bc7",
   "ZES_ENABLE_SYSMAN": "1"
 };

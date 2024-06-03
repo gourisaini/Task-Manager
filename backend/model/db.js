@@ -2,10 +2,7 @@ import mongoose from 'mongoose'
 
 const url = process.env.MONGODB;
 
-mongoose.connect(url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+mongoose.connect(url)
     .then(() => {
         console.log('Connected to database')
     })
